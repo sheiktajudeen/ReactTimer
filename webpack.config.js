@@ -28,7 +28,8 @@ module.exports = {
       Timer: path.resolve('./app/components/Timer.jsx'),
       Countdown: path.resolve('./app/components/Countdown.jsx'),
       applicationStyles: path.resolve('./app/styles/app.scss'),
-      Clock: path.resolve('./app/components/Clock.jsx')
+      Clock: path.resolve('./app/components/Clock.jsx'),
+      CountdownForm: path.resolve('./app/components/CountdownForm.jsx')
     },
     extensions: ['.js','.jsx']
   },
