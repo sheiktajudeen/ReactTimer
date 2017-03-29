@@ -8517,6 +8517,12 @@ var Controls = React.createClass({
           { className: 'button primary', onClick: _this2.onStatusChange('started') },
           'Start'
         );
+      } else if (countdownStatus === 'stopped') {
+        return React.createElement(
+          'button',
+          { className: 'button primary', onClick: _this2.onStatusChange('started') },
+          'Start'
+        );
       }
     };
     return React.createElement(
@@ -13457,11 +13463,7 @@ var Timer = React.createClass({
         timerStatus = _state.timerStatus;
 
     var renderControlArea = function renderControlArea() {
-      if (timerStatus !== 'stopped') {
-        return React.createElement(Controls, { countdownStatus: timerStatus, onStatusChange: _this2.handleStatusChange });
-      } else {
-        return React.createElement(TimerForm, { onSetCountdown: _this2.handleSetCountdown });
-      }
+      return React.createElement(Controls, { countdownStatus: timerStatus, onStatusChange: _this2.handleStatusChange });
     };
     return React.createElement(
       'div',

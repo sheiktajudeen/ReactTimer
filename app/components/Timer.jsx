@@ -54,12 +54,9 @@ var Timer = React.createClass({
   render: function(){
     var {count,timerStatus} = this.state;
     var renderControlArea = () => {
-      if(timerStatus !== 'stopped'){
-        return <Controls countdownStatus={timerStatus} onStatusChange={this.handleStatusChange}/>;
-      }
-      else {
-        return <TimerForm onSetCountdown={this.handleSetCountdown}/>;
-      }
+    return (
+        <Controls countdownStatus={timerStatus} onStatusChange={this.handleStatusChange}/>
+    );
     };
     return (
       <div>
