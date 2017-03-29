@@ -1,7 +1,7 @@
 var React = require('react');
 
 var Clock = require('Clock');
-var TimerForm = require('TimerForm');
+// var TimerForm = require('TimerForm');
 var Controls = require('Controls');
 
 var Timer = React.createClass({
